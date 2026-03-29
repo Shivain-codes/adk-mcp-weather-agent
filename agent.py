@@ -48,7 +48,7 @@ mcp_toolset = MCPToolset(
 
 root_agent = Agent(
     name="weather_intelligence_agent",
-    model=LiteLlm(model="gemini/gemini-2.0-flash"),
+    model=LiteLlm(model="gemini-2.5-flash"),
     description=(
         "An AI weather agent that uses MCP to retrieve structured weather data "
         "from a filesystem data source and generates intelligent weather reports."
