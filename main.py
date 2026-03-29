@@ -94,7 +94,7 @@ async def lifespan(app: FastAPI):
 app = FastAPI(
     title="ADK MCP Weather Intelligence Agent",
     description=(
-        "An AI weather agent using Google ADK + MCP + Gemini 2.0 Flash. "
+        "An AI weather agent using Google ADK + MCP + Gemini 2.5 Flash. "
         "Retrieves structured weather data via MCP filesystem tool and generates intelligent reports."
     ),
     version="1.0.0",
@@ -115,7 +115,7 @@ async def root():
     return {
         "agent": root_agent.name,
         "status": "running",
-        "model": "gemini-2.0-flash",
+        "model": "gemini-2.5-flash",
         "mcp_tool": "@modelcontextprotocol/server-filesystem",
         "data_source": "weather_data/ directory (5 cities)",
         "available_cities": ["london", "new_york", "tokyo", "mumbai", "sydney"],
