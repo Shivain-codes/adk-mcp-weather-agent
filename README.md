@@ -1,6 +1,6 @@
 # 🌤️ ADK MCP Weather Intelligence Agent
 
-> An AI agent built with **Google ADK** + **MCP** + **Gemini 2.0 Flash**, deployed on **Cloud Run**.
+> An AI agent built with **Google ADK** + **MCP** + **Gemini 2.5 Flash**, deployed on **Cloud Run**.
 > Retrieves structured weather data via MCP and generates intelligent weather reports.
 
 [![Google ADK](https://img.shields.io/badge/Google%20ADK-1.2.1-4285F4?logo=google)](https://google.github.io/adk-docs/)
@@ -16,7 +16,7 @@
 |----------|-------|
 | **Framework** | Google ADK v1.2.1 |
 | **MCP Tool** | `@modelcontextprotocol/server-filesystem` |
-| **Model** | Gemini 2.0 Flash |
+| **Model** | Gemini 2.5 Flash |
 | **Data Source** | Structured JSON weather files (5 cities) |
 | **Deployment** | Google Cloud Run |
 
@@ -42,7 +42,7 @@ HTTP Request
                ▼
 ┌─────────────────────────────────┐
 │    weather_intelligence_agent   │
-│    model: gemini-2.0-flash      │
+│    model: gemini-2.5-flash      │
 │    tools: [MCPToolset]          │
 └──────────────┬──────────────────┘
                │  MCP Protocol
@@ -55,7 +55,7 @@ HTTP Request
                │
                ▼
 ┌─────────────────────────────────┐
-│     Gemini 2.0 Flash            │
+│     Gemini 2.5 Flash            │
 │  Generates weather report from  │
 │  retrieved MCP data             │
 └─────────────────────────────────┘
